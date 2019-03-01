@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -112,27 +112,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hic-Mv-PME">
-                                <rect key="frame" x="205" y="132" width="30" height="30"/>
+                                <rect key="frame" x="205" y="170" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="-"/>
+                                <state key="normal" title="*"/>
                                 <connections>
                                     <action selector="appendOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5P-na-1un"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSH-xm-gJu">
-                                <rect key="frame" x="205" y="100" width="30" height="30"/>
+                                <rect key="frame" x="244" y="100" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="√"/>
                                 <connections>
-                                    <action selector="appendOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8M-Ei-AVH"/>
+                                    <action selector="addOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xV2-68-uAZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abm-K6-fj6">
-                                <rect key="frame" x="205" y="170" width="30" height="30"/>
+                                <rect key="frame" x="241" y="170" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="*"/>
+                                <state key="normal" title="clear"/>
                                 <connections>
-                                    <action selector="appendOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABy-bC-TUi"/>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Bz-RG-J7T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z87-lc-mui">
@@ -151,9 +151,50 @@
                                     <action selector="doOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqG-F5-Gtb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rq-51-tp7">
+                                <rect key="frame" x="205" y="100" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="appendOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a7r-qC-MkM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpH-0s-azK">
+                                <rect key="frame" x="296" y="30" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs4-g3-u3a">
+                                <rect key="frame" x="243" y="132" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1/x"/>
+                                <connections>
+                                    <action selector="addOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVD-Bn-UyX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cls-dD-dWq">
+                                <rect key="frame" x="111" y="396" width="156" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14993926661478862" blue="0.17004797854300047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAi-qG-Lgw">
+                                <rect key="frame" x="205" y="132" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="appendOpt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qU-is-YII"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lTt-RT-Yv5" firstAttribute="leading" secondItem="CpH-0s-azK" secondAttribute="trailing" constant="190" id="FQN-jc-3iE"/>
+                            <constraint firstItem="lTt-RT-Yv5" firstAttribute="leading" secondItem="CpH-0s-azK" secondAttribute="trailing" constant="8" id="Id7-f4-3nu"/>
+                            <constraint firstItem="CpH-0s-azK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="PYG-YX-1IY"/>
+                            <constraint firstItem="lTt-RT-Yv5" firstAttribute="leading" secondItem="CpH-0s-azK" secondAttribute="trailing" constant="8" id="Xfh-Zv-gJk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lTt-RT-Yv5" secondAttribute="trailing" constant="26" id="nTA-Wf-pO4"/>
                             <constraint firstItem="lTt-RT-Yv5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="oQF-Ph-XFu"/>
                         </constraints>
@@ -161,6 +202,8 @@
                     </view>
                     <connections>
                         <outlet property="lbDisplayData" destination="lTt-RT-Yv5" id="dJ6-Of-CDG"/>
+                        <outlet property="lbop" destination="CpH-0s-azK" id="sII-2N-oxG"/>
+                        <outlet property="lbwarning" destination="Cls-dD-dWq" id="Dtm-Ug-r3g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
